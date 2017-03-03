@@ -1,5 +1,7 @@
 import Foundation
 
+// TODO: Add the Summation function Here
+
 class Brain {
     private var currentResult = 0.0
     var result:Double {
@@ -24,6 +26,7 @@ class Brain {
         "e" : .Constant(M_E),
         "√" : .UnaryOperator(sqrt),
         "±" : .UnaryOperator({$0 != 0 ? -$0 : 0.0}),
+        // TODO: A reference to the Summation function here
         "+" : .BinaryOperator({$0+$1}),
         "−" : .BinaryOperator({$0-$1}),
         "×" : .BinaryOperator({$0*$1}),
